@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'FuturamaTitle';
+    src: url('../fonts/fr-title.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturamaBold';
+    src: url('../fonts/fr-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'FuturamaBold', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+   
+    padding-top: 70px; 
+}
+
+.link-logo{
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.link-logo:hover{
+    transform: scale(1.02); 
+    opacity: 0.85;
+}
+
+.logo {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.div-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cabecalho-principal {
+    position: fixed;   
+    top: 0;             
+    left: 0;            
+    width: 100%;        
+    height: 70px;       
+    z-index: 1000;      
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+    background-color: rgba(20, 20, 20, 0.85);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2); 
+}
+
+
+.texto-logo {
+    font-family: 'FuturamaTitle', sans-serif;
+    color: #d4af37;
+    font-weight: normal;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.botoes-navegacao {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.botoes-navegacao a {
+    font-family: 'FuturamaBold', sans-serif;
+    text-decoration: none;
+    color: #e0e0e0;
+
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    transition: all 0.25s ease-in; 
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+}
+
+
+.botoes-navegacao a:hover {
+    color: #d4af37;
+
+    border-bottom: 2px solid #d4af37;
+}
+
+
+.carousel-inner, 
+.carousel-item {
+    height: calc(100vh - 70px);
+}
+
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    /* Opcional: Escurece um pouco a imagem para o texto branco do carrossel ficar mais legível */
+    filter: brightness(0.6); 
+}
+
+.carousel-caption {
+    bottom: 20%; /* Sobe um pouco o texto */
+}
+
+.carousel-caption h5 {
+    font-family: 'FuturamaTitle', sans-serif;
+    color: #d4af37; /* Dourado */
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* Sombra para destacar da imagem */
+}
+
+.carousel-caption p {
+    font-family: 'FuturamaBold', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}   
+
+.corpo-principal{
+}
