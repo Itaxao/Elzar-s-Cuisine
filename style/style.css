@@ -119,21 +119,19 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
-    /* Opcional: Escurece um pouco a imagem para o texto branco do carrossel ficar mais legível */
     filter: brightness(0.6); 
 }
 
 .carousel-caption {
-    bottom: 20%; /* Sobe um pouco o texto */
+    bottom: 20%;
 }
 
 .carousel-caption h5 {
     font-family: 'FuturamaTitle', sans-serif;
-    color: #d4af37; /* Dourado */
+    color: #d4af37;
     font-size: 3rem;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* Sombra para destacar da imagem */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8); 
 }
 
 .carousel-caption p {
