@@ -6,31 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elzar's Cuisine</title>
   <link rel="icon" type="image/png" href="images/title.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
   <header class="cabecalho-principal">
-    <a href="#" class="link-logo">
+    <a href="index.htm" class="link-logo">
       <div class="div-logo">
         <img class="logo" src="images/logo.jpg">
         <span class="texto-logo">ELZAR'S CUISINE</span>
       </div>
     </a>
     <nav>
-      <ul class="botoes-navegacao">
-        <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#restaurantes">Restaurantes</a></li>
-        <li><a href="#reservas">Reservas</a></li>
-        <li><a href="#contato">Contato</a></li>
+      <ul class="botoes-navegacao align-items-center m-0">
+        <li><a href="cardapio.htm">Cardápio</a></li>
+        <li><a href="restaurantes.htm">Restaurantes</a></li>
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" id="dropdownContato" data-bs-toggle="dropdown" aria-expanded="false">
+            Contato
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark menu-contato" aria-labelledby="dropdownContato">
+            <li><a class="dropdown-item item-contato" href="https://wa.me/5531999999999" target="_blank">WhatsApp</a></li>
+            <li><a class="dropdown-item item-contato" href="mailto:elzar@planetexpress.com">E-mail</a></li>
+            <li><a class="dropdown-item item-contato" href="tel:+5531999999999">Telefone</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main class="corpo-principal">
-
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -39,46 +49,152 @@
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
       </div>
+      
       <div class="carousel-inner">
+        
+        <!-- SLIDE 1: LUGARES / FILIAIS -->
         <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1920&auto=format&fit=crop" class="d-block w-100" alt="Bebida Slurm">
+          <!-- Imagem de uma cidade noturna meio futurista (cyberpunk) -->
+          <img src="images/filiais.png" class="d-block w-100" alt="Nossas Filiais">
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>DE NOVA YORK A MARTE</h5>
+            <p>Conheça nossas filiais exclusivas espalhadas pelos melhores quadrantes da galáxia.</p>
           </div>
         </div>
+        
+        <!-- SLIDE 2: PROMOÇÃO -->
         <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1920&auto=format&fit=crop" class="d-block w-100" alt="Pizza Planet Express">
+          <!-- Imagem de um hambúrguer premium de dar água na boca -->
+          <img src="images/burgi.png" class="d-block w-100" alt="Promoção do Dia">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>COMBO DO HIPNOSAPO</h5>
+            <p>Peça qualquer prato principal e o Slurm Premium é por nossa conta. GLÓRIA AO HIPNOSAPO!</p>
           </div>
         </div>
+        
+        <!-- SLIDE 3: O AMBIENTE (FOTO DO LUGAR) -->
         <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1920&auto=format&fit=crop" class="d-block w-100" alt="Hamburguer Futurama">
+          <!-- Imagem de um interior de restaurante chique, escuro e com luzes pendentes -->
+          <img src="images/ambiente.png" class="d-block w-100" alt="Ambiente do Restaurante">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>AMBIENTE 5 ESTRELAS</h5>
+            <p>Design rústico, sofisticação e atmosfera perfeita para seus encontros intergalácticos.</p>
           </div>
-        </div>  
+        </div>
+        
       </div>
+      
+      <!-- CONTROLES DO CARROSSEL -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Próximo</span>
       </button>
     </div>
 
+
+    <section class="banner-cardapio" id="cardapio">
+      <div class="conteudo-cardapio">
+        <h2>CARDÁPIO</h2>
+        <p>Entradas, saladas, sanduíches, carnes, massas e sobremesas espaciais. Variedade e sabores que agradam a todas as espécies.</p>
+        <a href="cardapio.htm" class="btn-confira">Confira</a>
+      </div>
+    </section>
+
+    <div class="espaco-preto"></div>
+
+    <section class="banner-chef" id="sobre">
+      <div class="chef-container">
+        
+        <div class="chef-titulo">
+          <span class="chef-label">CHEF</span>
+          <h2>ELZAR<br>GURMAN</h2> </div>
+
+        <div class="chef-info">
+          <p>O renomado Chef Elzar viajou por diversas galáxias e criou o Elzar's Cuisine para você. Tudo isso para realizar um sonho: criar o melhor hambúrguer de carne de foca marciana do universo. BAM!</p>
+          <a href="sobre.htm" class="btn-historia">Conheça nossa história</a>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
+  <footer class="rodape-elzar" id="contato">
+    
+    <div class="rodape-topo">
+      <div class="container d-flex justify-content-between align-items-center">
+        <p class="frase-impacto">O hambúrguer de <span class="destaque-logo">ELZAR</span> faz o universo melhor.</p>
+        <div class="redes-sociais">
+          <a href="#" class="icone-social">IG</a>
+          <a href="#" class="icone-social">FB</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="linha-divisoria"></div>
+
+    <div class="container rodape-links mt-5">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <h6>O RESTAURANTE</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">O Chef Galáctico</a></li>
+            <li><a href="#">Arquitetura 3000</a></li>
+            <li><a href="#">Código de Conduta Ética (Mais ou Menos)</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <h6>RESTAURANTES</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Restaurantes Próximos (Terra)</a></li>
+            <li><a href="#">Restaurantes em Marte</a></li>
+          </ul>
+          <h6 class="mt-4">CARDÁPIO</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Tabela Nutricional Alienígena</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <h6>PARA FAZER EM CASA</h6>
+          <h6 class="mt-4">DELIVERY PLANET EXPRESS</h6>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <h6>SLURM CASHBACK</h6>
+          <h6 class="mt-4">FALE CONOSCO</h6>
+          <h6 class="mt-4">TRABALHE CONOSCO</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Vagas de Entregador</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container rodape-newsletter mt-5 text-center">
+      <div class="divisor-envelope">
+        <span class="icone-envelope">✉</span>
+      </div>
+      <p class="texto-dourado mt-4">Assine para Receber novidades: Inaugurações, Novos Pratos, Promoções e Eventos.</p>
+      <p class="texto-miudo mb-4">Para o atendimento à sua solicitação será necessária a coleta de seus dados. Encaminhando o formulário, você declara estar ciente sobre a utilização dos seus dados pessoais pelas Indústrias Mom.</p>
+      
+      <form class="form-newsletter d-flex justify-content-center gap-3 flex-wrap">
+        <input type="text" placeholder="Seu Nome" class="input-dark">
+        <input type="email" placeholder="Seu E-mail" class="input-dark">
+        <button type="submit" class="btn-ok">OK</button>
+      </form>
+      
+      <div class="text-center mt-5 mb-3">
+        <p class="texto-miudo">Cozinha Central: Nova Nova York, Setor 7G, Planeta Terra. CEP 3000-001.<br>Sede Administrativa: Órbita de Netuno.</p>
+      </div>
+    </div>
+  </footer>
 
 
-  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

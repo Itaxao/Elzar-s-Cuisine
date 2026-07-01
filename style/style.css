@@ -108,6 +108,35 @@ body {
     border-bottom: 2px solid #d4af37;
 }
 
+.botoes-navegacao .dropdown-toggle::after {
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.menu-contato {
+    background-color: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    margin-top: 15px !important; 
+    padding: 10px 0;
+}
+
+.menu-contato .item-contato {
+    font-family: 'FuturamaBold', sans-serif;
+    color: #e0e0e0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    border-bottom: none; 
+    transition: all 0.3s ease;
+}
+
+.menu-contato .item-contato:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: #d4af37;
+}
 
 .carousel-inner, 
 .carousel-item {
@@ -119,21 +148,19 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
-    /* Opcional: Escurece um pouco a imagem para o texto branco do carrossel ficar mais legível */
     filter: brightness(0.6); 
 }
 
 .carousel-caption {
-    bottom: 20%; /* Sobe um pouco o texto */
+    bottom: 20%;
 }
 
 .carousel-caption h5 {
     font-family: 'FuturamaTitle', sans-serif;
-    color: #d4af37; /* Dourado */
+    color: #d4af37; 
     font-size: 3rem;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8); /* Sombra para destacar da imagem */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
 
 .carousel-caption p {
@@ -142,5 +169,530 @@ body {
     text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }   
 
-.corpo-principal{
+
+.banner-cardapio {
+    min-height: 80vh; 
+    
+   
+    background-image: linear-gradient(to right, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 0.8) 50%, rgba(18, 18, 18, 1) 90%),    url('../images/lesmas.png   '); 
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    
+
+    padding-right: 12%; 
+}
+
+.conteudo-cardapio {
+  
+    max-width: 450px; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.conteudo-cardapio h2 {
+    font-family: 'FuturamaBold', sans-serif;
+    font-size: 3.5rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.conteudo-cardapio p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.btn-confira {
+    font-family: 'FuturamaBold', sans-serif;
+    display: inline-block;
+    padding: 12px 45px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-confira:hover {
+    background-color: #ffffff;
+    color: #121212; 
+    transform: scale(1.05);
+}
+
+
+.espaco-preto {
+    height: 120px; 
+    background-color: #121212; 
+}
+
+.banner-chef {
+    min-height: 80vh;
+    
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+                      url('../images/elzar.png');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+.chef-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.chef-titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.chef-label {
+    color: #d4af37; 
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: -5px; 
+}
+
+.chef-titulo h2 {
+    font-family: 'FuturamaBold', sans-serif;
+    font-size: 4.5rem;
+    color: #ffffff;
+    line-height: 1.1; 
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+
+.chef-info {
+    background-color: #000000; 
+    padding: 45px 40px;
+    max-width: 420px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.chef-info p {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.95rem;
+    color: #cccccc;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.btn-historia {
+    font-family: 'FuturamaBold', sans-serif;
+    display: inline-block;
+    padding: 12px 35px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-historia:hover {
+    background-color: #ffffff;
+    color: #121212;
+    transform: scale(1.05);
+}
+
+
+
+.rodape-elzar {
+    background: linear-gradient(to bottom, #1a1a1a 0%, #0a0a0a 100%);
+    color: #888888;
+    padding-bottom: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+.rodape-topo {
+    padding: 40px 0;
+}
+
+.frase-impacto {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #aaaaaa;
+}
+
+.destaque-logo {
+    font-family: 'FuturamaBold', sans-serif;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 15px;
+}
+
+.icone-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #d4af37;
+    color: #121212;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.icone-social:hover {
+    transform: scale(1.1);
+    color: #121212;
+}
+
+.linha-divisoria {
+    height: 1px;
+    background-color: rgba(212, 175, 55, 0.3);
+    width: 100%;
+}
+
+.rodape-links h6 {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.rodape-links a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+    line-height: 2; 
+}
+
+.rodape-links a:hover {
+    color: #d4af37;
+}
+
+
+.divisor-envelope {
+    position: relative;
+    text-align: center;
+    margin-top: -15px; 
+}
+
+.divisor-envelope::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.icone-envelope {
+    position: relative;
+    z-index: 2;
+    background-color: #0a0a0a;
+    padding: 0 15px;
+    color: #555555;
+    font-size: 1.5rem;
+}
+
+.texto-dourado {
+    color: #d4af37;
+    font-size: 1rem;
+}
+
+.texto-miudo {
+    font-size: 0.75rem;
+    color: #555555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.input-dark {
+    background-color: #000000;
+    border: 1px solid #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    width: 250px;
+    font-size: 0.9rem;
+}
+
+.input-dark:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.btn-ok {
+    background-color: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-ok:hover {
+    background-color: #d4af37;
+    color: #121212;
+}
+
+.corpo-cardapio {
+    background-color: #121212;
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+
+.titulo-secao-cardapio h1 {
+    font-family: 'FuturamaTitle', sans-serif;
+    color: #d4af37;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.subtitulo-cardapio {
+    font-family: 'Arial', sans-serif;
+    color: #888888;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.linha-decorativa {
+    width: 60px;
+    height: 2px;
+    background-color: #d4af37;
+    margin: 25px auto 50px auto;
+}
+
+.container-itens-cardapio {
+    max-width: 1140px;
+}
+
+.card-item-menu {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border-radius: 4px; 
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-item-menu:hover {
+    transform: translateY(-5px);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.wrapper-imagem-prato {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background-color: #0b0b0b;
+}
+
+.img-prato {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-item-menu:hover .img-prato {
+    transform: scale(1.05);
+}
+
+.card-item-menu h3 {
+    font-family: 'FuturamaBold', sans-serif;
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.ingredientes-prato {
+    font-family: 'Arial', sans-serif;
+    color: #d4af37;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descricao-prato {
+    font-family: 'Arial', sans-serif;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.preco-prato {
+    font-family: 'FuturamaBold', sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.active-page {
+    color: #d4af37 !important;
+    border-bottom: 2px solid #d4af37 !important;
+}
+
+
+.corpo-sobre {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+}
+
+.texto-container {
+    max-width: 800px;
+}
+
+.linha-dourada {
+    width: 100px;
+    height: 1px;
+    background: #d4af37;
+    margin: 0 auto;
+}
+
+.texto-sobre {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #a0a0a0;
+}
+
+.bloco-interativo {
+    border: 1px solid #d4af37;
+    padding: 40px;
+    transition: all 0.5s ease;
+}
+
+.bloco-interativo:hover {
+    background: rgba(212, 175, 55, 0.05);
+    transform: scale(1.02);
+}
+
+.dourado {
+    font-family: 'FuturamaBold', sans-serif;
+    color: #d4af37;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.corpo-restaurante {
+    background-image: url('../images/galaxia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    animation: floating-space 30s ease-in-out infinite alternate;
+    
+    min-height: 100vh;
+    padding-top: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+@keyframes floating-space {
+    from {
+        background-position: center 0%;
+        transform: scale(1);
+    }
+    to {
+        background-position: center 100%;
+        transform: scale(1.05);
+    }
+}
+
+.titulo-pag {
+    font-family: 'FuturamaTitle', sans-serif;
+    color: #d4af37;
+    font-size: 3rem;
+}
+
+.card-restaurante {
+    background: rgba(0, 0, 0, 0.8) !important; 
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    backdrop-filter: blur(5px);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease;
+}
+
+.card-restaurante:hover {
+    border-color: #d4af37;
+    background: #202020;
+    transform: translateY(-15px) rotate(2deg);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+}
+
+.card-restaurante h3 {
+    font-family: 'FuturamaBold', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn-detalhe {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.btn-detalhe:hover {
+    background: #d4af37;
+    color: #121212;
 }
